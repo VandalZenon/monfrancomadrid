@@ -91,7 +91,7 @@ a {
     position: absolute;
    transform: translateX(-80%);
     border-radius: 50%;
-    box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.564);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.058);
 }
 .hero-image {
   height: 80vh;
