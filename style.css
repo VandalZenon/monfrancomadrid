@@ -7,6 +7,7 @@
   --font-kdam: "OCR A", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
   --font-prompt: "Yu Gothic UI", sans-serif;
+  
 }
 
 * {
@@ -49,6 +50,12 @@ a {
   font-family: var(--font-prompt);
   font-size: 2rem;
   margin-left: 1.5rem;
+}
+.navbar div a i{
+font-size: 1.5rem;
+}
+.nav-brand{
+  min-width: max-content;
 }
 .bold {
   font-weight: bold;
@@ -191,4 +198,22 @@ a {
    width: 100vw;
    overflow-y: hidden;
    overflow-x: hidden;
+ }
+ .nav-link-toggler{
+   display: none !important;
+   max-width: max-content;
+  }
+
+ @media screen and (max-width: 600px) {
+   .nav-link-container{
+      /* display: flex;
+      flex-direction: column; */
+      z-index: 1;
+      transform: translateX(100vw);
+   }
+   .nav-link-toggler{
+     display: block !important;
+     margin: 2rem;
+   }
+   
  }
