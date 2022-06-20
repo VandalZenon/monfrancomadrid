@@ -1,6 +1,6 @@
 
 const navLinks = document.getElementsByClassName('nav-link');
-document.addEventListener("mousemove",parallax);
+
 
 function removeFromClassList(){
     console.log(navLinks.length);
@@ -17,15 +17,6 @@ function addActivetoClasslist(i){
     console.log(i)
 }
 
-function parallax(e){
-    document.querySelectorAll(".paralax-item").forEach(function(move){
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value)/250;
-        var y = (e.clientY * moving_value)/250;
-        
 
-        move.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-}
 
 
