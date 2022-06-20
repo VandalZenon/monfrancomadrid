@@ -3,6 +3,7 @@
   --accent-color: #6ff6a6;
   --nodejs-color: #00cd84;
   --reactjs-color: #61dafb;
+  --css-color: #3164f0;
   --circle-background-color: #25262a;
   --font-kdam: "OCR A", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
@@ -73,6 +74,7 @@ a {
   display: flex;
   align-items: center;
   margin: 1.5rem;
+  justify-content: center;
 }
 .sidebar ul {
   height: 50vh;
@@ -81,6 +83,11 @@ a {
   justify-content: space-around;
   list-style-type: none;
   font-size: 1.5rem;
+}
+.sidebar ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero {
   position: absolute;
@@ -156,10 +163,10 @@ a {
   background-color: var(--circle-background-color);
   left: -8vw;
   bottom: -20vh;
-  box-shadow: 0px 0px 10px 4px rgb(23, 23, 215);
+  box-shadow: 0px 0px 10px 4px var(--css-color);
 }
 .circle-container ul li:nth-child(2) i {
-  color: rgb(23, 23, 215);
+  color: var(--css-color);
   font-size: 4rem;
 }
 .circle-container ul li:nth-child(3) {
@@ -174,6 +181,7 @@ a {
   color: var(--nodejs-color);
   font-size: 4rem;
 }
+
 
 .link-active {
   color: var(--accent-color);
@@ -198,20 +206,20 @@ a {
   display: none !important;
   max-width: max-content;
 }
-.floating :nth-child(1) li { 
+.floating  { 
   animation-name: floating;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-.floating :nth-child(2) li { 
+.floating :nth-child(2) { 
   animation-name: floating;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.floating :nth-child(3) li{ 
+.floating :nth-child(3){ 
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
